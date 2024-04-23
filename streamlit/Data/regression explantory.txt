@@ -1,0 +1,81 @@
+******************************************************************************
+Choose 1 of 3 Summary
+      Highest Adjusted R-Squared Results     
+AdjR2     AICc   JB K(BP)  VIF   SA   Model        
+ 0.58 24624.23 0.00  0.00 1.00 0.00  +TOTAL***     
+ 0.58 24658.34 0.00  0.00 1.00 0.00  +ICT_ACCESS***
+ 0.49 25011.37 0.00  0.00 1.00 0.00  +ELECTRICIT***
+       Passing Models       
+AdjR2 AICc JB K(BP) VIF SA   Model
+******************************************************************************
+Choose 2 of 3 Summary
+              Highest Adjusted R-Squared Results              
+AdjR2     AICc   JB K(BP)   VIF   SA   Model                        
+ 0.60 24542.77 0.00  0.00  7.20 0.00  +ICT_ACCESS***  +TOTAL***     
+ 0.60 24554.98 0.00  0.00 16.85 0.00  +ICT_ACCESS***  -ELECTRICIT***
+ 0.59 24616.41 0.00  0.00  8.13 0.00  +TOTAL***  -ELECTRICIT***     
+       Passing Models       
+AdjR2 AICc JB K(BP) VIF SA   Model
+******************************************************************************
+Choose 3 of 3 Summary
+                    Highest Adjusted R-Squared Results                   
+AdjR2     AICc   JB K(BP)   VIF   SA   Model                                   
+ 0.66 24260.96 0.00  0.00 20.09 0.00  +ICT_ACCESS***  +TOTAL***  -ELECTRICIT***
+       Passing Models       
+AdjR2 AICc JB K(BP) VIF SA   Model
+******************************************************************************
+************** Exploratory Regression Global Summary (VICTIMS) ***************
+
+              Percentage of Search Criteria Passed             
+                   Search Criterion Cutoff Trials # Passed % Passed
+             Min Adjusted R-Squared > 0.50      7        6    85.71
+            Max Coefficient p-value < 0.05      7        7   100.00
+                      Max VIF Value < 7.50      7        4    57.14
+            Min Jarque-Bera p-value > 0.10      7        0     0.00
+Min Spatial Autocorrelation p-value > 0.10      7        0     0.00
+
+------------------------------------------------------------------------------
+
+      Summary of Variable Significance     
+Variable   % Significant % Negative % Positive
+ICT_ACCESS        100.00       0.00     100.00
+TOTAL             100.00       0.00     100.00
+ELECTRICIT        100.00      75.00      25.00
+
+------------------------------------------------------------------------------
+
+                  Summary of Multicollinearity                 
+Variable     VIF Violations Covariates                            
+ICT_ACCESS 17.80     2      ELECTRICIT (66.67), TOTAL (33.33)     
+TOTAL       8.59     2      ELECTRICIT (66.67), ICT_ACCESS (33.33)
+ELECTRICIT 20.09     3      TOTAL (66.67), ICT_ACCESS (66.67)     
+
+------------------------------------------------------------------------------
+
+                 Summary of Residual Normality (JB)                
+      JB    AdjR2         AICc    K(BP)      VIF       SA   Model        
+0.000000 0.488395 25011.371231 0.000000 1.000000 0.000000  +ELECTRICIT***
+0.000000 0.583291 24624.225843 0.000000 1.000000 0.000000  +TOTAL***     
+0.000000 0.575688 24658.341101 0.000000 1.000000 0.000000  +ICT_ACCESS***
+
+------------------------------------------------------------------------------
+
+                        Summary of Residual Spatial Autocorrelation (SA)                       
+      SA    AdjR2         AICc       JB    K(BP)       VIF   Model                                   
+0.000000 0.656630 24260.956581 0.000000 0.000000 20.085409  +ICT_ACCESS***  +TOTAL***  -ELECTRICIT***
+0.000000 0.601109 24542.768015 0.000000 0.000000  7.202412  +ICT_ACCESS***  +TOTAL***                
+0.000000 0.598520 24554.976248 0.000000 0.000000 16.846847  +ICT_ACCESS***  -ELECTRICIT***           
+
+------------------------------------------------------------------------------
+
+Table Abbreviations
+AdjR2 Adjusted R-Squared                                     
+AICc  Akaike's Information Criterion                         
+JB    Jarque-Bera p-value                                    
+K(BP) Koenker (BP) Statistic p-value                         
+VIF   Max Variance Inflation Factor                          
+SA    Global Moran's I p-value                               
+Model Variable sign (+/-)                                    
+Model Variable significance (* = 0.10, ** = 0.05, *** = 0.01)
+
+------------------------------------------------------------------------------
